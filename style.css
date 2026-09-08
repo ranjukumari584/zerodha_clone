@@ -1,0 +1,362 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+center {
+    width: 100%;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 150px;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #387ed1;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+main > img {
+    width: 700px;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1 {
+    color: #387ed1;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #387ed1;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* Paragraph with ID */
+#para1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    color: blue;
+
+    text-decoration: underline;
+    text-transform: uppercase;
+
+    background-color: yellow;
+    padding: 20px;
+
+    border: 2px dotted blue;
+}
+
+
+/* Paragraph with ID */
+#para2 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Georgia;
+    color: green;
+
+    text-decoration: overline;
+    text-transform: capitalize;
+
+    background-color: yellow;
+    padding: 20px;
+
+    border: 2px dashed red;
+}
+
+
+/* Paragraphs with class */
+.info {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Verdana;
+    color: purple;
+
+    text-decoration: none;
+    text-transform: lowercase;
+
+    background-color: yellow;
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Last paragraph */
+#para5 {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial;
+    color: darkblue;
+
+    background-color: yellow;
+    padding: 20px;
+
+    border: 2px solid black;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    padding: 15px 30px;
+
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+    color: white;
+    background-color: #387ed1;
+
+    border: 2px solid black;
+    border-radius: 50px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #285ea8;
+}
+
+
+/* =========================================
+   HORIZONTAL LINE
+========================================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+
+/* =========================================
+   VIDEO SECTION
+========================================= */
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Doraemon video container */
+
+#Doreamon-Episodes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+
+/* YouTube videos */
+
+iframe {
+    width: 100%;
+    height: 280px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   REGISTRATION FORM
+========================================= */
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #387ed1;
+    outline: none;
+}
+
+
+/* =========================================
+   STOCK PRICE TABLE
+========================================= */
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #387ed1;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+}
+
+td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #Doreamon-Episodes {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    label {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+}
